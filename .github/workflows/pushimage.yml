@@ -26,7 +26,7 @@ jobs:
       - name: Build and push TechTrends image
         uses: docker/build-push-action@v4
         with:
-          context: ./project-directory                # set to your project directory
-          file: ./project1/techtrendsrends/Dockerfile  # reference TechTrends Dockerfile
+          context: ./proj_techtrend              # set to your project directory
+          file: ./proj_techtrend/Dockerfile  # reference TechTrends Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/techtrends:latest
