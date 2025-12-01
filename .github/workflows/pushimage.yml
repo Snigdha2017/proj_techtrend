@@ -27,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: ./proj_techtrend              # set to your project directory
-          file: ./proj_techtrend/Dockerfile  # reference TechTrends Dockerfile
+          file: ./Dockerfile  # reference TechTrends Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/techtrends:latest
