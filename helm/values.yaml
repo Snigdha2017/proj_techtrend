@@ -3,9 +3,13 @@ namespace: sandbox
 replicaCount: 1
 
 image:
-  repository: techtrends
+  repository: snigdha2017/techtrends
   tag: latest
   pullPolicy: IfNotPresent
+
+imagePullSecrets:
+  - name: regcred   # secret dockerhub secret
+
 
 service:
   type: ClusterIP
